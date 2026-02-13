@@ -43,7 +43,7 @@ terraform/
 ## 2) 배포
 
 ```bash
-cd /Users/sej/Desktop/INFRA/final-project/terraform
+# 프로젝트 루트로 이동
 cp terraform.tfvars.example terraform.tfvars
 # terraform.tfvars 값 수정
 terraform init
