@@ -1,0 +1,21 @@
+cluster_name = "final-eks-seoul"
+
+# Optional tuning
+region = "ap-northeast-2"
+kubernetes_version = "1.30"
+
+# Keep this public-only as requested.
+azs                 = ["ap-northeast-2a", "ap-northeast-2c"]
+public_subnet_cidrs = ["10.20.1.0/24", "10.20.2.0/24"]
+
+node_instance_types = ["t3.medium"]
+node_desired_size   = 2
+node_min_size       = 2
+node_max_size       = 4
+
+# ExternalDNS: fill your hosted zone suffixes if needed.
+external_dns_domain_filters = ["example.com"]
+
+tags = {
+  Owner = "platform-team"
+}
